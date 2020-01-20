@@ -19,24 +19,23 @@
 
 <body class="body">
 	<!-- <div id="webgl"></div> -->
-	<div class= "threeContainer">
+
 	<canvas id="artifactCanvas" myattr="myattr"></canvas>
-	</div>
+
 	<div class="div-block-4">
 		<div class="section">
-			<div data-collapse="tiny" data-animation="default" data-duration="400" class="navbarhome w-nav">
+			<div data-collapse="tiny" data-animation="default" data-duration="400" class="navbar w-nav">
 				<div class="div-block-37">
-					<a href="index.html" class="brand w-nav-brand w--current">
-						<div class="text-block-3">Ryan DeRolf</div>
-					</a>
+
 					<div class="menu-button w-nav-button">
 						<div class="icon w-icon-nav-menu"></div>
 					</div>
-					<nav role="navigation" class="nav-menu-2 w-nav-menu"><a href="index.html" data-w-id="28c98b23-73fd-e8cd-7526-f371e0dedc55" class="nav-link-3 w-nav-link w--current">WORK<br></a><a href="about-me.html" data-w-id="28c98b23-73fd-e8cd-7526-f371e0dedc58" class="nav-link-3 w-nav-link">ABOUT ME</a></nav>
+					<nav role="navigation" class="nav-menu-2 w-nav-menu"><a href="index.html" data-w-id="28c98b23-73fd-e8cd-7526-f371e0dedc55" class="nav-link-3 w-nav-link w--current">Work<br></a><a href="about-me.html" data-w-id="28c98b23-73fd-e8cd-7526-f371e0dedc58" class="nav-link-3 w-nav-link">About</a></nav>
 				</div>
 			</div>
 			<div class="div-heading-threejs">
-
+				<p class="intro-main">Ryan DeRolf // a designer interested in programming, mobile & web design.</p>
+				<p class="intro-hint">Hint: Spin the R!</p>
 			</div>
 			<div data-collapse="medium" data-animation="default" data-duration="400" class="navbar-3 w-nav">
 				<nav role="navigation" class="nav-menu w-nav-menu"><a href="#greenbean" class="link-3">1- </a><a href="#willowtree_new_hire" class="link-3">2- </a><a href="#infosystem_new_hire" class="link-3">3- </a></nav>
@@ -44,7 +43,7 @@
 		</div>
 	</div>
 	<div class="div-block-29"></div>
-	<div class="div-block-26"></div>
+
 	<!-- <div class="div-block-7">
 		<h1 class="main-heading">Work</h1>
 	</div> -->
@@ -52,7 +51,6 @@
 		<p class="paragraph-8">**</p>
 		<p class="paragraph-8">Unfortunately, due to the nature of my work I&#x27;m unable to show all of the projects I&#x27;ve worked on. Contact me to see more!</p>
 	</div> -->
-	<p>Hello</p>
 	<div class="div-full-page">
 		<div id="greenbean" class="willowtree">
 			<div class="div-heading"><a href="greenbean.html" class="w-inline-block"><img src="images/Multiple-Isometric-iPhone-MockUps.jpg" srcset="images/Multiple-Isometric-iPhone-MockUps-p-500.jpeg 500w, images/Multiple-Isometric-iPhone-MockUps-p-800.jpeg 800w, images/Multiple-Isometric-iPhone-MockUps-p-1600.jpeg 1600w, images/Multiple-Isometric-iPhone-MockUps-p-2000.jpeg 2000w, images/Multiple-Isometric-iPhone-MockUps-p-2600.jpeg 2600w, images/Multiple-Isometric-iPhone-MockUps-p-3200.jpeg 3200w, images/Multiple-Isometric-iPhone-MockUps.jpg 5120w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 80vw, 62vw" alt="" class="image-7"></a>
@@ -84,6 +82,7 @@
 		</div>
 	</div>
 	<div class="div-block-17"></div>
+
 	<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/webflow.js" type="text/javascript"></script>
 
@@ -102,34 +101,39 @@
 			function init() {
 
 				scene = new THREE.Scene();
-				scene.background = new THREE.Color( 0xdddddd );
+				scene.background = new THREE.Color( 0xffffff );
 				scene.fog = new THREE.FogExp2( 0xcccccc, 0.002 );
 
 				renderer = new THREE.WebGLRenderer( { canvas: artifactCanvas } );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+
+// 				container = document.getElementById('container');
+// renderer.setSize($(container).width(), $(container).height());
+// container.appendChild(renderer.domElement);
+
+				renderer.setSize( window.innerWidth/2.5, window.innerHeight/2.5 );
 				document.body.appendChild( renderer.domElement );
 
-				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1000 );
+				camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 1, 1000 );
 				camera.position.set( 2000, 200, 4000 );
 				// camera.lookAt
 				// controls
 				controls = new OrbitControls( camera, renderer.domElement );
 				//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+				controls.enablePan= false;
+				controls.enableZoom = false;
 				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
 				controls.dampingFactor = 0.05;
 				controls.screenSpacePanning = false;
 				controls.minDistance = 3;
 				controls.maxDistance = 8;
 				controls.maxPolarAngle = Math.PI / 2;
-				controls.noPan = true;
+
 				controls.noKeys = true;
 				controls.noRotate = true;
-				controls.noZoom = true;
 				// world
 
 				var loader = new GLTFLoader();
-					// loader.load('car/scene.gltf', function(gltf) {
 				loader.load('./models/R_red.gltf', function(gltf) {
 
 						scene.add(gltf.scene);
@@ -160,7 +164,7 @@
 				pointLight2.position.set(500,100,0);
 				scene.add(pointLight2);
 
-				var pointLight3 = new THREE.PointLight(0xc4c4c4,10);
+				var pointLight3 = new THREE.PointLight(0xc4c4c4,8);
 				pointLight3.position.set(0,100,-500);
 				scene.add(pointLight3);
 
@@ -175,7 +179,7 @@
 			function onWindowResize() {
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth/2.5, window.innerHeight/2.5 );
 			}
 
 			function animate() {
