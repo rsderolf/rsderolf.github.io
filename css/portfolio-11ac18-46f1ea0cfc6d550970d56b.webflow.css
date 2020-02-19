@@ -1009,7 +1009,7 @@
   -ms-flex-item-align: start;
   align-self: flex-start;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   color: #000;
   line-height: 40px;
   text-align: left;
@@ -1315,19 +1315,6 @@
   width: 80%;
 }
 
-.heading-7-copy {
-  width: 35%;
-  margin-top: 0px;
-  padding-right: 38px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  font-family: 'Founders Grotesk regular webfont', sans-serif;
-  font-size: 22px;
-  color: #000;
-  line-height: 40px;
-  text-align: left;
-}
 
 .div-block-18-copy {
   display: -webkit-box;
