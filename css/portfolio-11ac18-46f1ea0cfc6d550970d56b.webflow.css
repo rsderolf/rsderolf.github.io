@@ -864,7 +864,7 @@
   align-self: center;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -2017,10 +2017,11 @@
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    font-size: 14px;
     line-height: 12px;
     font-weight: 400;
   }
+
+
   .image-7 {
     min-height: 10vh;
   }
