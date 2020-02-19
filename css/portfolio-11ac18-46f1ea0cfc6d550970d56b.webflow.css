@@ -856,8 +856,8 @@
 .category {
   width: auto;
   margin-top: 0px;
-  margin-bottom: 5px;
-  padding-top: 20px;
+  margin-bottom: 15px;
+  padding-top: 30px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
