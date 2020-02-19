@@ -1009,6 +1009,7 @@
   -ms-flex-item-align: start;
   align-self: flex-start;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
+  font-size: 22px;
   color: #000;
   line-height: 40px;
   text-align: left;
@@ -1831,9 +1832,7 @@
   .image-8 {
     height: auto;
   }
-  .heading-7 {
-    font-size: 34px;
-  }
+
   .div-block-quote {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -2069,7 +2068,7 @@
     width: 100%;
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 34px;
   }
   .paragraph-10 {
