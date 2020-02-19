@@ -862,7 +862,7 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  font-family: 'Founders Grotesk regular webfont', sans-serif;
+  font-family: 'Founders Grotesk light webfont', sans-serif;
   color: #606060;
   font-size: 18px;
   text-align: center;
@@ -1686,7 +1686,7 @@
   font-family: 'Founders Grotesk regular webfont', sans-serif;
   color: #fff;
   font-size: 20px;
-  padding-top: 8px;
+  padding-top: 8px;font
 }
 
 .link-block-4 {
@@ -2201,7 +2201,13 @@
 
 @font-face {
   font-family: 'Founders Grotesk regular webfont';
-  src: url('../fonts/FoundersGroteskRegular.ttf') format('truetype');
+  src: url('../fonts/FoundersGrotesk-Regular.otf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Founders Grotesk light webfont';
+  src: url('../fonts/FoundersGrotesk-Light.otf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
