@@ -989,12 +989,11 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 140px;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: center;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -1002,26 +1001,61 @@
 }
 
 .heading-7 {
-  width: 35%;
+  width: 40%;
   margin-top: 0px;
-  padding-right: 38px;
+  padding-left: 15%;
+  text-align: left;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   color: #000;
-  line-height: 40px;
-  text-align: left;
+  line-height: normal;
+
+}
+
+.four-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.text-wrapper {
+  width: 60%;
+  padding-top: 0px;
+  padding-right: 12%;
+}
+
+
+.paragraph-bigger {
+  width: 100%;
+  font-family: 'Founders Grotesk regular webfont', sans-serif;
+  color: #000;
+  font-size: 22px;
+  line-height: normal;
+}
+
+.paragraph-bigger-bold {
+  width: 100%;
+  font-family: 'Founders Grotesk medium webfont', sans-serif;
+  color: #000;
+  font-size: 22px;
+  line-height: normal;
 }
 
 .paragraph-10 {
-  width: 65%;
+  width: 100%;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
   color: #000;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 24px;
+  margin-bottom: 0px;
 }
+
 
 .div-block-19 {
   display: -webkit-box;
@@ -1097,11 +1131,11 @@
 }
 
 .div-block-22 {
-  width: 20%;
-  padding-top: 2px;
-  padding-bottom: 0px;
+  width: 8%;
+  margin-left: 60%;
+  margin-right: 18%;
   border-top: 1.5px none #707070;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1.5px solid #D2D3D8;
 }
 
 .image-9 {
@@ -2261,6 +2295,12 @@
   font-family: 'Founders Grotesk regular webfont';
   src: url('../fonts/FoundersGrotesk-Regular.otf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Founders Grotesk medium webfont';
+  src: url('../fonts/FoundersGrotesk-Medium.otf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
