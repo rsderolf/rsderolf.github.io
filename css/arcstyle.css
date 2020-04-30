@@ -1898,8 +1898,9 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
-  height: 60px;
+  width: 180px;
+  height: 45px;
+  padding-top: 40px;
   margin-bottom: 0vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1909,16 +1910,16 @@ ul {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 30px;
-  background-color: #0015ff;
+  border-radius: 8px;
+  background-color: #DEE1E6;
 }
 
 .text-block-2 {
   width: auto;
   height: auto;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
-  color: #fff;
-  font-size: 20px;
+  color: #000;
+  font-size: 18px;
   padding-top: 8px;font
 }
 
