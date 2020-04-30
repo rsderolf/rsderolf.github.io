@@ -1008,6 +1008,9 @@
 .spacer-15 {
   height: 15px;
 }
+.spacer-30 {
+  height: 30px;
+}
 
 .heading-7 {
   width: 40%;
@@ -1018,7 +1021,7 @@
   -ms-flex-item-align: start;
   align-self: flex-start;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   color: #000;
   line-height: normal;
 
@@ -1048,6 +1051,35 @@
   height: auto;
   text-align: center;
 }
+
+.two-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.two-image {
+  width: 44%;
+  height: auto;
+}
+
+.two-quote {
+  width: 100%;
+  text-align: center;
+  width: 100%;
+  font-family: 'Founders Grotesk regular webfont', sans-serif;
+  color: #8B8B8B;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+
+
 
 /* .div-block-25 {
   display: -webkit-box;
@@ -1082,6 +1114,10 @@
   line-height: 30px;
   margin-bottom: 0px;
 }
+.two-text{
+  width: 80%;
+  height: auto;
+}
 
 .paragraph-bigger-bold {
   width: 100%;
@@ -1090,6 +1126,23 @@
   font-size: 22px;
   line-height: normal;
   letter-spacing: .5px;
+}
+
+li {
+  width: 100%;
+  font-family: 'Founders Grotesk regular webfont', sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding-bottom: 14px;
+  /* list-style-position: inside;
+  padding-left: 0; */
+}
+
+ul {
+  /* list-style-position: inside; */
+  padding-left: 0;
+
 }
 
 .paragraph-10 {
