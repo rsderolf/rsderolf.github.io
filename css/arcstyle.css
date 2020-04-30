@@ -1110,7 +1110,7 @@
   width: 100%;
   font-family: 'Founders Grotesk regular webfont', sans-serif;
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   margin-bottom: 0px;
 }
@@ -1123,9 +1123,9 @@
   width: 100%;
   font-family: 'Founders Grotesk medium webfont', sans-serif;
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   line-height: normal;
-  letter-spacing: .5px;
+  letter-spacing: .3px;
 }
 
 li {
